@@ -1,0 +1,14 @@
+html-template
+bin-debug
+bin-release
+www
+air
+docs
+bin
+.settings
+.actionScriptProperties
+.flexLibProperties
+.project
+.git
+Thumbs.db
+.DS_Store
