@@ -30,13 +30,15 @@ How To Use
 
 Supported Controllers
 ---------------------
+
 Ouya Controllers
 Xbox360 Controllers
 
 SEO
 ---
-Flash Ouya Input
-Flash Game Ouya Controller
-AS3 Ouya Input
-AS3 Ouya Controller
-Adobe Air Ouya Input
+
+* **Flash Ouya Input**
+* **Flash Game Ouya Controller**
+* **AS3 Ouya Input**
+* **AS3 Ouya Controller**
+* **Adobe Air Ouya Input**
