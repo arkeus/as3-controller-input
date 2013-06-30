@@ -61,7 +61,6 @@ package io.arkeus.ouya {
 
 		private static function onDeviceAttached(event:GameInputEvent):void {
 			attach(event.device);
-			detach(event.device);
 		}
 
 		private static function attach(device:GameInputDevice):void {
