@@ -36,13 +36,6 @@ package io.arkeus.ouya.controller {
 			for (var i:uint = 0; i < device.numControls; i++) {
 				var control:GameInputControl = device.getControlAt(i);
 				controlMap[control.id] = control;
-
-				control.addEventListener(Event.CHANGE, function(e:Event):void {
-					var button:String = (e.target as GameInputControl).id;
-					if (button.toLowerCase().indexOf("axis_0") != -1 || button.toLowerCase().indexOf("axis_1") != -1) {
-						return;
-					}
-				});
 			}
 
 			if (controlMap['BUTTON_100'] != null) {
