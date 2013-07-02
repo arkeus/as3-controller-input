@@ -8,6 +8,11 @@ Warning
 
 Work in progress. Use at your own risk.
 
+Requirements
+------------
+Adobe Air 3.8+ SDK (beta)
+Flash Player 11.8+ (beta)
+
 What Does It Do?
 ----------------
 
@@ -23,19 +28,18 @@ It allows you to easily get interfaces to interact with any number of connected 
 How To Use
 ----------
 
-1. Add GameInputControlName to your project (typically by adding the SWC to your build path). You can find it in the [Adobe Gaming SDK](http://gaming.adobe.com/technologies/gamingsdk/).
-2. Add AS3 Controller Input to your project (copy the source files over, or add the external folder to your build path).
-3. ... (TODO)
-4. Profit!
+1. Add AS3 Controller Input to your project (copy the source files over, or add the external folder to your build path).
+2. ... (TODO)
+3. Profit!
 
 Supported Controllers
 ---------------------
 
-Ouya Controllers
-Xbox360 Controllers
+Ouya Controllers (PC and on Ouya)
+Xbox360 Controllers (PC only currently)
 
-SEO
----
+Topics
+------
 
 * **Flash Ouya Input**
 * **Flash Game Ouya Controller**
