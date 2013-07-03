@@ -68,6 +68,10 @@ package io.arkeus.ouya {
 				return;
 			}
 			var controllerClass:Class = parseControllerType(device.name);
+			if (controllerClass == null) {
+				// Unknown device
+				return;
+			}
 			readyControllers.push(new controllerClass(device));
 		}
 
@@ -116,7 +120,7 @@ package io.arkeus.ouya {
 				return OuyaController;
 			}
 
-			throw new ArgumentError("Unknown device name found: " + name);
+			return null;
 		}
 
 		private static function onKeyDown(event:KeyboardEvent):void {
