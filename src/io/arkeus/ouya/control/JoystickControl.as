@@ -14,7 +14,6 @@ package io.arkeus.ouya.control {
 		public var up:ButtonControl;
 		public var down:ButtonControl;
 		
-		public var button:ButtonControl;
 		private var reversedY:Boolean;
 		
 		public function JoystickControl(device:GameController, xAxis:GameInputControl, yAxis:GameInputControl, joystickButton:GameInputControl, reversedY:Boolean = false) {

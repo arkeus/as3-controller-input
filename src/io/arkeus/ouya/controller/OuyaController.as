@@ -1,5 +1,4 @@
 package io.arkeus.ouya.controller {
-	import flash.events.Event;
 	import flash.ui.GameInputControl;
 	import flash.ui.GameInputDevice;
 	
@@ -23,9 +22,6 @@ package io.arkeus.ouya.controller {
 		public var rightStick:JoystickControl;
 
 		public var dpad:DirectionalPadControl;
-		public var down:ButtonControl;
-		public var left:ButtonControl;
-		public var right:ButtonControl;
 
 		public function OuyaController(device:GameInputDevice) {
 			super(device);
