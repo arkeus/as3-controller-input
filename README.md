@@ -29,15 +29,22 @@ Quick Start
 -----------
 
 1. Add AS3 Controller Input to your project (copy the source files over, or add the external folder to your build path).
-2. Call ControllerInput.initialize(stage)
+
+2. Call
+
+		ControllerInput.initialize(stage)
+	
 3. Check if there are connected controllers that are ready, grab one, store a reference:
-	if (ControllerInput.hasReadyController()) {
-		ouyaController = ControllerInput.getReadyController() as OuyaController;
-	}
+
+		if (ControllerInput.hasReadyController()) {
+			ouyaController = ControllerInput.getReadyController() as OuyaController;
+		}
+	
 4. Read input whenever you want!
-	ouyaController.a.pressed || ouyaController.b.held // Just pressed, or held down
-	ouyaController.lt.value > 0.3 // The left trigger is held down more than 30% of thew ay
-	ouyaController.rightStick.angle > Math.PI / 2 && ouyaController.rightStick.distance > 0.5 // Read joystick input in multiple ways
+
+		ouyaController.a.pressed || ouyaController.b.held // Just pressed, or held down
+		ouyaController.lt.value > 0.3 // The left trigger is held down more than 30% of thew ay
+		ouyaController.rightStick.angle > Math.PI / 2 && ouyaController.rightStick.distance > 0.5 // Read joystick input in multiple ways
 	
 Documentation
 -------------
