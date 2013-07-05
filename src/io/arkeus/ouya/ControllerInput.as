@@ -12,6 +12,10 @@ package io.arkeus.ouya {
 	import io.arkeus.ouya.controller.OuyaController;
 	import io.arkeus.ouya.controller.Xbox360Controller;
 
+	/**
+	 * A class for reading input from controllers. Allows you to pull ready controllers from a queue
+	 * of controllers that have been initialized, to allow input from as many controllers as you need.
+	 */
 	public class ControllerInput {
 		private static var controllers:Vector.<GameController> = new Vector.<GameController>;
 		private static var readyControllers:Vector.<GameController> = new Vector.<GameController>;
@@ -21,6 +25,12 @@ package io.arkeus.ouya {
 		public static var now:uint = getTimer();
 		public static var previous:uint = now;
 
+		/**
+		 * Initializes the library, adding event listeners as needed. The passed stage is used to add event
+		 * listeners for entering frame and for keyboard events.
+		 * 
+		 * @param stage A reference to the root flash stage.
+		 */
 		public static function initialize(stage:DisplayObject):void {
 			gameInput = new GameInput;
 			gameInput.addEventListener(GameInputEvent.DEVICE_ADDED, onDeviceAttached);
