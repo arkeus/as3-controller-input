@@ -44,14 +44,31 @@ package io.arkeus.ouya {
 			}
 		}
 
+		/**
+		 * Returns the active controller with the passed index.
+		 * 
+		 * @param index The index of the controller to grab.
+		 * @return An active controller.
+		 */
 		public static function controller(index:uint):GameController {
 			return controllers[index];
 		}
 
+		/**
+		 * Returns whether or not there is a controller that is ready to be polled for input.
+		 * 
+		 * @return Whether there is a ready controller or not.
+		 */
 		public static function hasReadyController():Boolean {
 			return readyControllers.length > 0;
 		}
 
+		/**
+		 * Returns a ready controller and activates it (allowing it to be polled for input). This moves the
+		 * controller from the "ready controllers" queue to the list of active "controllers".
+		 * 
+		 * @return The controller, now in a ready state.
+		 */
 		public static function getReadyController():GameController {
 			var readyController:GameController = readyControllers.shift();
 			readyController.enable();
