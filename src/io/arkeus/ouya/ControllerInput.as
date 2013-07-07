@@ -76,10 +76,24 @@ package io.arkeus.ouya {
 			return readyController;
 		}
 
+		/**
+		 * Returns whether or not one of the currently used controllers has been disconnected. You can check this
+		 * queue in order to handle this case gracefully. Also, you can check if the "removed" property of the
+		 * controller is true, which also signifies that the controller has been detached from the system and can
+		 * no longer be read for input.
+		 * 
+		 * @return Whether or not there is a detached controller.
+		 */
 		public static function hasRemovedController():Boolean {
 			return removedControllers.length > 0;
 		}
 
+		/**
+		 * Similar to reading a newly ready controller, this allows you to read a removed controller and handle it
+		 * however you'd like.
+		 * 
+		 * @return The removed controller.
+		 */
 		public static function getRemovedController():GameController {
 			var removedController:GameController = removedControllers.shift();
 			removedController.disable();
