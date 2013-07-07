@@ -100,6 +100,11 @@ package io.arkeus.ouya {
 			return removedController;
 		}
 
+		/**
+		 * Callback when a device is attached.
+		 * 
+		 * @param event The GameInputEvent containing the attached deviced.
+		 */
 		private static function onDeviceAttached(event:GameInputEvent):void {
 			attach(event.device);
 		}
@@ -116,6 +121,11 @@ package io.arkeus.ouya {
 			readyControllers.push(new controllerClass(device));
 		}
 
+		/**
+		 * Callback when a device is detached.
+		 * 
+		 * @param event The GameInputEvent containing the detached deviced.
+		 */
 		private static function onDeviceDetached(event:GameInputEvent):void {
 			detach(event.device);
 		}
