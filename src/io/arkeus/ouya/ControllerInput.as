@@ -109,6 +109,10 @@ package io.arkeus.ouya {
 			attach(event.device);
 		}
 
+		/**
+		 * Attaches a game device by creating a class that corresponds to the device type
+		 * and adding it to the ready controllers list.
+		 */
 		private static function attach(device:GameInputDevice):void {
 			if (device == null) {
 				return;
@@ -130,6 +134,10 @@ package io.arkeus.ouya {
 			detach(event.device);
 		}
 
+		/**
+		 * Detaches a device by setting the removed attribute to true, removing it from the controllers
+		 * list, and adding to the removed controllers list.
+		 */
 		private static function detach(device:GameInputDevice):void {
 			if (device == null) {
 				return;
