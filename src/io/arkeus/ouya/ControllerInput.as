@@ -150,6 +150,14 @@ package io.arkeus.ouya {
 			removedControllers.push(detachedController);
 		}
 
+		/**
+		 * Helper method that takes a group and a target device, removes the device from the group
+		 * and returns it. If the controller was not present in the group, returns null instead.
+		 * 
+		 * @param source The group to remove the controller from.
+		 * @param target The game input device to remove and return.
+		 * @return The removed controller corresponding to the device, or null if it wasn't present.
+		 */
 		private static function findAndRemoveDevice(source:Vector.<GameController>, target:GameInputDevice):GameController {
 			var result:GameController = null;
 			for each (var controller:GameController in source) {
