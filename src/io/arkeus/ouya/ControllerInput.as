@@ -175,6 +175,11 @@ package io.arkeus.ouya {
 			return null;
 		}
 
+		/**
+		 * Sets up timers on enter frame in order to keep track of whether a button is pressed or held.
+		 * 
+		 * @param event The enter frame event.
+		 */
 		private static function onEnterFrame(event:Event):void {
 			previous = now;
 			now = getTimer();
