@@ -185,6 +185,13 @@ package io.arkeus.ouya {
 			now = getTimer();
 		}
 
+		/**
+		 * Given the name of a device, returns the supported class for that device. If the device isn't
+		 * supported by AS3 Controller Input, returns null.
+		 * 
+		 * @param name The name of the device.
+		 * @return The controller class corresponding to the device name.
+		 */
 		private static function parseControllerType(name:String):Class {
 			if (name.toLowerCase().indexOf("xbox 360") != -1) {
 				return Xbox360Controller;
