@@ -202,6 +202,12 @@ package io.arkeus.ouya {
 			return null;
 		}
 
+		/**
+		 * Callback for keyboard events that catches the back and escape keys such that stupid bindings
+		 * don't exit the application.
+		 * 
+		 * @param event The keyboard event.
+		 */
 		private static function onKeyDown(event:KeyboardEvent):void {
 			if (event.keyCode == 27 || event.keyCode == Keyboard.BACK) {
 				event.preventDefault();
