@@ -1,8 +1,13 @@
 package io.arkeus.ouya.controller {
 	import flash.ui.GameInputDevice;
 
+	/**
+	 * A class abstracting away the input controls for a single controller.
+	 */
 	public class GameController {
+		/** The underlying game device. */
 		public var device:GameInputDevice;
+		/** A flag indicating if this controller was removed (no longer usable). */
 		public var removed:Boolean = false;
 
 		public function GameController(device:GameInputDevice) {
