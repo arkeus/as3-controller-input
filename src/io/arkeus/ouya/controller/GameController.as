@@ -5,11 +5,12 @@ package io.arkeus.ouya.controller {
 	 * A class abstracting away the input controls for a single controller.
 	 */
 	public class GameController {
-		/** The underlying game device. */
+		/** The underlying source game device. */
 		public var device:GameInputDevice;
 		/** A flag indicating if this controller was removed (no longer usable). */
 		public var removed:Boolean = false;
 
+		/** Creates a game controller and binds the controlers to the source device. */
 		public function GameController(device:GameInputDevice) {
 			this.device = device;
 			bindControls();
