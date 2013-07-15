@@ -16,10 +16,16 @@ package io.arkeus.ouya.controller {
 			bindControls();
 		}
 
+		/**
+		 * Sets the enabled flag to true.
+		 */
 		public function enable():void {
 			device.enabled = true;
 		}
 
+		/**
+		 * Sets the enabled flag to false.
+		 */
 		public function disable():void {
 			device.enabled = true;
 		}
