@@ -30,14 +30,25 @@ package io.arkeus.ouya.controller {
 			device.enabled = true;
 		}
 
+		/**
+		 * Sets the controller as removed.
+		 */
 		public function remove():void {
 			removed = true;
 		}
 
+		/**
+		 * Resets all the inputs on the controller. Useful after a state change when you don't
+		 * want the inputs to trigger in the new state.
+		 */
 		public function reset():void {
 			throw new Error("You must implement error in each GameController subclass");
 		}
 
+		/**
+		 * Private method that is called on initialization. All control bindings should
+		 * go in this method.
+		 */
 		protected function bindControls():void {
 			throw new Error("You must implement bindControls in each GameController subclass");
 		}
