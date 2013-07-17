@@ -42,7 +42,7 @@ package io.arkeus.ouya.controller {
 		 * want the inputs to trigger in the new state.
 		 */
 		public function reset():void {
-			throw new Error("You must implement error in each GameController subclass");
+			throw new Error("You must implement reset in each GameController subclass");
 		}
 
 		/**
