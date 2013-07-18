@@ -7,10 +7,17 @@ package io.arkeus.ouya.controller {
 	import io.arkeus.ouya.control.JoystickControl;
 	import io.arkeus.ouya.control.TriggerControl;
 
+	/**
+	 * A class containing the bindings for a single Ouya controller.
+	 */
 	public class OuyaController extends GameController {
+		/** The O face button. */
 		public var o:ButtonControl;
+		/** The U face button. */
 		public var u:ButtonControl;
+		/** The Y face button. */
 		public var y:ButtonControl;
+		/** The A face button. */
 		public var a:ButtonControl;
 
 		public var lb:ButtonControl;
