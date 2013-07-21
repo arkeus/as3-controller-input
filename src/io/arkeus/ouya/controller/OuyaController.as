@@ -37,10 +37,14 @@ package io.arkeus.ouya.controller {
 		/** Directional pad. */
 		public var dpad:DirectionalPadControl;
 
+		/** Creates a new Ouya controller */
 		public function OuyaController(device:GameInputDevice) {
 			super(device);
 		}
 
+		/**
+		 * @inheritDoc
+		 */
 		override protected function bindControls():void {
 			var controlMap:Object = {};
 			for (var i:uint = 0; i < device.numControls; i++) {
@@ -83,6 +87,9 @@ package io.arkeus.ouya.controller {
 			}
 		}
 
+		/**
+		 * @inheritDoc
+		 */
 		override public function reset():void {
 			a.reset();
 			o.reset();
