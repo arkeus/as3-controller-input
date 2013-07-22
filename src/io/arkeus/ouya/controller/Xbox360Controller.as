@@ -7,6 +7,9 @@ package io.arkeus.ouya.controller {
 	import io.arkeus.ouya.control.JoystickControl;
 	import io.arkeus.ouya.control.TriggerControl;
 
+	/**
+	 * A class containing the bindings for a single Xbox 360 controller.
+	 */
 	public class Xbox360Controller extends GameController {
 		public var a:ButtonControl;
 		public var b:ButtonControl;
