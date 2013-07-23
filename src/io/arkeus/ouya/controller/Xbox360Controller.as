@@ -11,9 +11,13 @@ package io.arkeus.ouya.controller {
 	 * A class containing the bindings for a single Xbox 360 controller.
 	 */
 	public class Xbox360Controller extends GameController {
+		/** The A face button. */
 		public var a:ButtonControl;
+		/** The B face button. */
 		public var b:ButtonControl;
+		/** The X face button. */
 		public var x:ButtonControl;
+		/** The Y face button. */
 		public var y:ButtonControl;
 
 		public var lb:ButtonControl;
