@@ -20,8 +20,11 @@ package io.arkeus.ouya.controller {
 		/** The Y face button. */
 		public var y:ButtonControl;
 
+		/** Left shoulder button. */
 		public var lb:ButtonControl;
+		/** Left shoulder trigger. */
 		public var lt:TriggerControl;
+		/** Left joystick. */
 		public var leftStick:JoystickControl;
 
 		public var rb:ButtonControl;
