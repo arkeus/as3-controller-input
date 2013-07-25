@@ -27,8 +27,11 @@ package io.arkeus.ouya.controller {
 		/** Left joystick. */
 		public var leftStick:JoystickControl;
 
+		/** Right shoulder button. */
 		public var rb:ButtonControl;
+		/** Right shoulder trigger. */
 		public var rt:TriggerControl;
+		/** Right joystick. */
 		public var rightStick:JoystickControl;
 
 		public var dpad:DirectionalPadControl;
