@@ -17,9 +17,9 @@ package io.arkeus.ouya {
 	 * of controllers that have been initialized, to allow input from as many controllers as you need.
 	 */
 	public class ControllerInput {
-		private static var controllers:Vector.<GameController> = new Vector.<GameController>;
-		private static var readyControllers:Vector.<GameController> = new Vector.<GameController>;
-		private static var removedControllers:Vector.<GameController> = new Vector.<GameController>;
+		public static var controllers:Vector.<GameController> = new Vector.<GameController>;
+		public static var readyControllers:Vector.<GameController> = new Vector.<GameController>;
+		public static var removedControllers:Vector.<GameController> = new Vector.<GameController>;
 		private static var gameInput:GameInput;
 
 		public static var now:uint = getTimer();
@@ -52,6 +52,25 @@ package io.arkeus.ouya {
 		 */
 		public static function controller(index:uint):GameController {
 			return controllers[index];
+		}
+		
+		/**
+		 * Returns the number of active controllers that are connected and taking input.
+		 * 
+		 * @return The number of active controllers.
+		 */
+		public static function numControllers():uint {
+			return controllers.length;
+		}
+		
+		/**
+		 * Returns the number of ready controllers that are connected, but are not yet active.
+		 * Use getReadyController() in order to get a ready controller and make it active.
+		 * 
+		 * @return The number of ready controllers.
+		 */
+		public static function numReadyControllers():uint {
+			return readyControllers.length;
 		}
 
 		/**
