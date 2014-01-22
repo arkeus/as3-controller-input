@@ -185,6 +185,11 @@ Supported Controllers
 
 Note that the OuyaController should work consistently on the Ouya. Please let me know if it does not work on the PC (I'm currently unaware if drivers and connection method change the bindings that each control on the controller gets).
 
+Note
+----
+
+Inspired by Terry Cavanagh's Controller class.
+
 Topics
 ------
 
