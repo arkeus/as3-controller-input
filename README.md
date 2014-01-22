@@ -3,15 +3,10 @@ AS3 Controller Input
 
 AS3 Controller Input is a library used for abstracting away all the game input logic within Adobe AIR, allowing you to have a simple interface to use Ouya and Xbox360 controllers within your flash game.
 
-Warning
--------
-
-Work in progress. Use at your own risk.
-
 Requirements
 ------------
-Adobe Air 3.8+ SDK (beta)
-Flash Player 11.8+ (beta)
+Adobe Air 3.8+ SDK
+Flash Player 11.8+
 
 What Does It Do?
 ----------------
