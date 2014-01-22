@@ -44,17 +44,22 @@ package io.arkeus.ouya.control {
 			return reversedY ? -yAxis.value : yAxis.value;
 		}
 		
+		/**
+		 * Returns the angle of the joystick in radians.
+		 * 
+		 * @return The rotation of the joystick in radians.
+		 */
 		public function get angle():Number {
 			return Math.atan2(y, x);
 		}
 		
 		/**
-		 * Returns a flash-friendly value for this
-		 * stick's position in degrees.
-		 * @return	A number in degrees.
+		 * Returns a flash-friendly value for this stick's position in degrees.
+		 * 
+		 * @return The rotation of the joystick in degrees.
 		 */
 		public function get rotation():Number {
-			return (Math.atan2( -y, x) + (Math.PI / 2)) * 180 / Math.PI;
+			return (Math.atan2(-y, x) + (Math.PI / 2)) * 180 / Math.PI;
 		}
 		
 		public function get distance():Number {
